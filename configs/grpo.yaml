@@ -1,0 +1,23 @@
+seed: 42
+model:
+  policy_path: checkpoints/sft
+  reference_path: checkpoints/sft
+
+data:
+  prompt_file: data/eval/prompts.jsonl
+  max_prompt_length: 256
+  max_new_tokens: 128
+  group_size: 4
+
+reward:
+  repetition_penalty_weight: -0.3
+  length_penalty_weight: -0.05
+  keyword_coverage_weight: 1.0
+
+training:
+  output_dir: checkpoints/grpo
+  batch_size: 2
+  learning_rate: 1.0e-5
+  kl_coef: 0.02
+  total_steps: 100
+

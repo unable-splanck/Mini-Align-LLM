@@ -1,0 +1,2 @@
+{"instruction": "将下面的句子翻译成英文。", "input": "人工智能正在改变软件开发。", "output": "Artificial intelligence is changing software development."}
+{"instruction": "列出两个学习大模型对齐的重点。", "input": "", "output": "1. 理解 SFT、奖励设计和 RLHF 的基本流程。\n2. 能结合实验结果分析模型行为变化。"}
